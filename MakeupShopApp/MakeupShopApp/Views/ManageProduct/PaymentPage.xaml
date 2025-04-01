@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MakeupShopApp.Views.ManageProduct.PaymentPage">
+    <ContentPage.Content>
+
+        <ScrollView>
+            <StackLayout Padding="20" Spacing="20">
+                <Button Text="🏠 Home"
+                    BackgroundColor="Transparent"
+                    TextColor="#007AFF"
+                    FontSize="16"
+                    HorizontalOptions="Start"
+                    Clicked="OnHomeClicked"/>
+                
+
+                <!-- Header -->
+                <Label Text="Complete Your Payment" FontSize="28" FontAttributes="Bold" TextColor="#D63384" HorizontalOptions="Center" />
+
+                <!-- User Details -->
+                <Label Text="Full Name" FontSize="16" />
+                <Entry x:Name="NameEntry" Placeholder="Enter your full name" BackgroundColor="#FFE0E0" />
+
+                <Label Text="Address" FontSize="16" />
+                <Editor x:Name="AddressEditor" Placeholder="Enter your delivery address" HeightRequest="100" BackgroundColor="#FFE0E0" />
+
+                <Label Text="Phone Number" FontSize="16" />
+                <Entry x:Name="PhoneEntry" Placeholder="Enter your phone number" Keyboard="Telephone" BackgroundColor="#FFE0E0" />
+
+                <!-- Payment Method -->
+                <Label Text="Select Payment Method" FontSize="16" />
+                <Picker x:Name="PaymentPicker" Title="Choose Payment Method">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Credit Card</x:String>
+                            <x:String>Debit Card</x:String>
+                            <x:String>UPI</x:String>
+                            <x:String>Cash on Delivery</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+                <!-- Order Summary -->
+                <Label x:Name="TotalLabel" FontSize="20" TextColor="#28A745" FontAttributes="Bold" />
+
+                <!-- Place Order Button -->
+                <Button Text="Place Order" Clicked="OnPlaceOrderClicked" BackgroundColor="#D63384" TextColor="White" CornerRadius="25" />
+
+                <!-- Back Button -->
+                <Button Text="Back to Cart" Clicked="OnBackClicked" BackgroundColor="#FFC107" TextColor="Black" CornerRadius="25" />
+            </StackLayout>
+
+            
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

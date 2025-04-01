@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MakeupShopApp.Views.Users.UserDashboard">
+    <ContentPage.Content>
+
+        <ScrollView>
+            <StackLayout Padding="20" Spacing="20">
+
+                <Frame CornerRadius="10" BackgroundColor="#FFD1DC" Padding="20" HasShadow="True">
+                    <StackLayout Spacing="10" HorizontalOptions="Center">
+                        <Label Text="{Binding WelcomeMessage}"
+                               FontSize="28"
+                               FontAttributes="Bold"
+                               TextColor="#D63384"
+                               HorizontalTextAlignment="Center" />
+
+                                    <Label Text="Discover the latest trends in beauty and makeup"
+                               FontSize="16"
+                               TextColor="#333"
+                               HorizontalTextAlignment="Center" />      
+                    </StackLayout>
+                </Frame>
+
+                <!-- Product Categories -->
+                <Label Text="Shop by Category" FontSize="22" FontAttributes="Bold" TextColor="#333" />
+                <Grid ColumnSpacing="10" RowSpacing="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="150" />
+                        <RowDefinition Height="150" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <!-- Category 1 -->
+                    <Frame CornerRadius="15" BackgroundColor="#FFE4E1">
+                        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                            <Image Source="lipstick.png" WidthRequest="80" HeightRequest="80"/>
+                            <Label Text="Lipsticks" FontSize="16" TextColor="#555" />
+
+                            <!-- Add Tap Gesture Recognizer -->
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnProductClicked" />
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+                    </Frame>
+
+                    <!-- Category 2 -->
+                    <Frame CornerRadius="15" BackgroundColor="#FFF5EE" Grid.Column="1">
+                        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                            <Image Source="foundation.png" WidthRequest="80" HeightRequest="80"/>
+                            <Label Text="Foundation" FontSize="16" TextColor="#555" />
+
+                            <!-- Add Tap Gesture Recognizer -->
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnProductClicked" />
+                            </StackLayout.GestureRecognizers>
+                            
+                            
+                        </StackLayout>
+                    </Frame>
+
+                    <!-- Category 3 -->
+                    <Frame CornerRadius="15" BackgroundColor="#E6E6FA" Grid.Row="1">
+                        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                            <Image Source="eyeshadow.png" WidthRequest="80" HeightRequest="80"/>
+                            <Label Text="Eyeshadow" FontSize="16" TextColor="#555" />
+
+                            <!-- Add Tap Gesture Recognizer -->
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnProductClicked" />
+                            </StackLayout.GestureRecognizers>
+                            
+                        </StackLayout>
+                    </Frame>
+
+                    <!-- Category 4 -->
+                    <Frame CornerRadius="15" BackgroundColor="#FFF8DC" Grid.Row="1" Grid.Column="1">
+                        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                            <Image Source="skincare.png" WidthRequest="80" HeightRequest="80"/>
+                            <Label Text="Skincare" FontSize="16" TextColor="#555" />
+                            <!-- Add Tap Gesture Recognizer -->
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnProductClicked" />
+                            </StackLayout.GestureRecognizers>
+                            
+                        </StackLayout>
+                    </Frame>
+                </Grid>
+
+                <!-- Current Offers -->
+                <Label Text="Exciting Offers" FontSize="22" FontAttributes="Bold" TextColor="#333" />
+                <Frame CornerRadius="10" BackgroundColor="#FFDEAD" Padding="15">
+                    <Label Text="🎁 Get 20% off on your first order! Use code: BEAUTY20"
+                       FontSize="16"
+                       TextColor="#8B4513" />
+                </Frame>
+
+                <!-- Manage Orders and Cart -->
+                <StackLayout Orientation="Horizontal" Spacing="20">
+                    <!-- Orders -->
+                    <Frame CornerRadius="10" BackgroundColor="#98FB98" Padding="20" WidthRequest="160">
+                        <StackLayout HorizontalOptions="Center">
+                            <Label Text="🛒 My Orders" FontSize="18" TextColor="#006400" />
+                            <Button Text="View Orders" BackgroundColor="#2E8B57" TextColor="White" Clicked="OnOrdersClicked"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <!-- Cart -->
+                    <Frame CornerRadius="10" BackgroundColor="#ADD8E6" Padding="20" WidthRequest="160">
+                        <StackLayout HorizontalOptions="Center">
+                            <Label Text="🛍 My Cart" FontSize="18" TextColor="#1E90FF" />
+                            <Button Text="Go to Cart" BackgroundColor="#4682B4" TextColor="White" Clicked="OnCartClicked"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+
+                <!-- Profile and Logout -->
+                <StackLayout Orientation="Horizontal" Spacing="20">
+                    <Button Text="👤 Edit Profile" BackgroundColor="#FFA07A" TextColor="White" Clicked="OnProfileClicked"/>
+                    <Button Text="🚪 Logout" BackgroundColor="#FF6347" TextColor="White" Clicked="OnLogoutClicked"/>
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+        
+        
+    </ContentPage.Content>
+</ContentPage>

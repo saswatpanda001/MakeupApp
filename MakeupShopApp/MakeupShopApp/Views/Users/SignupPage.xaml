@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MakeupShopApp.Views.Users.SignupPage"
+             BackgroundColor="#FFF5F8">
+
+    <ContentPage.Content>
+        <!-- Scrollable Content -->
+        <ScrollView>
+            <StackLayout Padding="30" Spacing="20">
+
+                <!-- Header Section with Gradient Background -->
+                <Frame BackgroundColor="#D63384" CornerRadius="20" Padding="25" HasShadow="True">
+                    <Label Text="🌸 Create a New Account" 
+                           FontSize="28" 
+                           HorizontalOptions="Center"
+                           TextColor="White" 
+                           FontAttributes="Bold"/>
+                </Frame>
+
+                <!-- Username Entry -->
+                <Label Text="Username" FontSize="16" TextColor="#333" />
+                <Frame BackgroundColor="White" CornerRadius="12" Padding="5" HasShadow="True">
+                    <Entry x:Name="UsernameEntry" Placeholder="Enter your username" TextColor="#333" />
+                </Frame>
+
+                <!-- Email Entry -->
+                <Label Text="Email" FontSize="16" TextColor="#333" />
+                <Frame BackgroundColor="White" CornerRadius="12" Padding="5" HasShadow="True">
+                    <Entry x:Name="EmailEntry" Placeholder="Enter your email" Keyboard="Email" TextColor="#333" />
+                </Frame>
+
+                <!-- Phone Entry -->
+                <Label Text="Phone Number" FontSize="16" TextColor="#333" />
+                <Frame BackgroundColor="White" CornerRadius="12" Padding="5" HasShadow="True">
+                    <Entry x:Name="PhoneEntry" Placeholder="Enter your phone number" Keyboard="Telephone" TextColor="#333" />
+                </Frame>
+
+                <!-- Password Entry -->
+                <Label Text="Password" FontSize="16" TextColor="#333" />
+                <Frame BackgroundColor="White" CornerRadius="12" Padding="5" HasShadow="True">
+                    <Entry x:Name="PasswordEntry" Placeholder="Create a password" IsPassword="True" TextColor="#333" />
+                </Frame>
+
+                <!-- Confirm Password Entry -->
+                <Label Text="Confirm Password" FontSize="16" TextColor="#333" />
+                <Frame BackgroundColor="White" CornerRadius="12" Padding="5" HasShadow="True">
+                    <Entry x:Name="ConfirmPasswordEntry" Placeholder="Confirm your password" IsPassword="True" TextColor="#333" />
+                </Frame>
+
+                <!-- Sign Up Button -->
+                <Button Text="🎉 Sign Up"
+                        BackgroundColor="#007bff"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        CornerRadius="25"
+                        Clicked="OnSignupClicked"
+                        HeightRequest="50" />
+
+                <!-- Login Navigation -->
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="5">
+                    <Label Text="Already have an account? " TextColor="#333" />
+                    <Label Text="Log in" TextColor="#007bff" FontAttributes="Bold">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnLoginClicked" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
+
+    
+    

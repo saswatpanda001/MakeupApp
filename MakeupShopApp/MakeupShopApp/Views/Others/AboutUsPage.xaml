@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MakeupShopApp.Views.Others.AboutUsPage">
+    <ContentPage.Content>
+
+
+        <ScrollView>
+            <StackLayout Padding="20" Spacing="20">
+
+                <!-- Header Section -->
+                <Frame CornerRadius="15" BackgroundColor="#FFD1DC" Padding="20">
+                    <StackLayout>
+                        <!-- Title Label -->
+                        <Label Text="Welcome to DollUp!"
+               FontSize="28"
+               FontAttributes="Bold"
+               TextColor="#D63384"
+               HorizontalOptions="Center" />
+
+                        <!-- Description Label -->
+                        <Label Text="Your one-stop shop for all things beauty and makeup. Experience luxury, elegance, and self-care with our premium products."
+               FontSize="16"
+               TextColor="#6D214F"
+               HorizontalOptions="Center"
+              />
+                    </StackLayout>
+                </Frame>
+
+                <!-- Image Section -->
+                <Image Source="makeuplogo.png" 
+                   Aspect="AspectFill"
+                   HeightRequest="200"
+                  />
+
+                <!-- Mission Section -->
+                <Frame CornerRadius="15" BackgroundColor="#FFE4E1" Padding="20">
+                    <StackLayout>
+                    <Label Text="✨ Our Mission"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       TextColor="#C71585"/>
+                    <Label Text="We believe in empowering people through self-expression. Our products are designed to bring out your inner glow."
+                       FontSize="16"
+                       TextColor="#6D214F"/>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Values Section -->
+                <Frame CornerRadius="15" BackgroundColor="#FFF0F5" Padding="20">
+                    <StackLayout>
+                    <Label Text="🌿 Our Values"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       TextColor="#B03A2E"/>
+                    <Label Text="• Cruelty-Free and Vegan Friendly
+• Sustainable Packaging
+• Affordable Luxury
+• Inclusive Beauty for All"
+                       FontSize="16"
+                       TextColor="#6D214F"/>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Contact Section -->
+                <Frame CornerRadius="15" BackgroundColor="#FADADD" Padding="20">
+                    <StackLayout>
+                    <Label Text="📞 Contact Us"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       TextColor="#8E44AD"/>
+                    <Label Text="Have questions or feedback? We'd love to hear from you!"
+                       FontSize="16"
+                       TextColor="#6D214F"/>
+                    <Label Text="Email: support@dollup.com"
+                       FontSize="14"
+                       TextColor="#8E44AD"/>
+                    <Label Text="Phone: +123 456 7890"
+                       FontSize="14"
+                       TextColor="#8E44AD"/>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Social Media Section -->
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
+                    <Image Source="instagram_icon.png" HeightRequest="40" WidthRequest="40"/>
+                    <Image Source="facebook_icon.png" HeightRequest="40" WidthRequest="40"/>
+                    <Image Source="twitter_icon.png" HeightRequest="40" WidthRequest="40"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+        
+        
+    </ContentPage.Content>
+</ContentPage>

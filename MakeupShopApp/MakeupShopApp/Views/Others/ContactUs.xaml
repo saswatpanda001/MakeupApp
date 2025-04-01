@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MakeupShopApp.Views.Others.ContactUs">
+    <ContentPage.Content>
+
+        <ScrollView>
+            <StackLayout Padding="20" Spacing="20">
+
+                <!-- Header Section -->
+                <Frame CornerRadius="15" BackgroundColor="#FFD1DC" Padding="20">
+                    <StackLayout>
+                    <Label Text="Get In Touch 💖"
+                       FontSize="28"
+                       FontAttributes="Bold"
+                       TextColor="#D63384"
+                       HorizontalOptions="Center" />
+                    <Label Text="We're here to help! Feel free to reach out to us with any questions or feedback."
+                       FontSize="16"
+                       HorizontalOptions="Center"
+                       TextColor="#6D214F"/>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Contact Details Section -->
+                <Frame CornerRadius="15" BackgroundColor="#FFE4E1" Padding="20">
+                    <StackLayout>
+                        <Label Text="📧 Email Us"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       TextColor="#C71585"/>
+                    <Label Text="support@dollup.com"
+                       FontSize="16"
+                       TextColor="#6D214F"/>
+
+                    <Label Text="📞 Call Us"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       TextColor="#C71585"
+                       Margin="20,10,0,0"/>
+                    <Label Text="+123 456 7890"
+                       FontSize="16"
+                       TextColor="#6D214F"/>
+
+                    <Label Text="📍 Visit Us"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       TextColor="#C71585"
+                       Margin="20,10,0,0"/>
+                    <Label Text="123 Glam Street, Beauty City, BL 45678"
+                       FontSize="16"
+                       TextColor="#6D214F"/>
+            </StackLayout>
+            </Frame>
+            
+
+                <!-- Form Section -->
+                <Frame CornerRadius="15" BackgroundColor="#FFF0F5" Padding="20">
+                <StackLayout>
+                    <Label Text="📝 Send Us a Message"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       TextColor="#B03A2E"/>
+
+                    <Entry Placeholder="Your Name" FontSize="16" BackgroundColor="#FFFFFF" />
+                    <Entry Placeholder="Your Email" FontSize="16" BackgroundColor="#FFFFFF" Keyboard="Email" />
+                    <Editor Placeholder="Write your message here..." HeightRequest="120" BackgroundColor="#FFFFFF" />
+
+                    <Button Text="Send Message"
+                        BackgroundColor="#D63384"
+                        TextColor="White"
+                        CornerRadius="25"
+                        Margin="0,20,0,0"
+                        HeightRequest="50"/>
+                </StackLayout>
+            </Frame>
+
+                <!-- Social Media Section -->
+                <StackLayout Spacing="20" HorizontalOptions="Center">
+                    <Label Text="Follow Us On Social Media"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="#8E44AD"/>
+                    <StackLayout Orientation="Horizontal" Spacing="20">
+                        <Image Source="instagram_icon.png" HeightRequest="40" WidthRequest="40"/>
+                        <Image Source="facebook_icon.png" HeightRequest="40" WidthRequest="40"/>
+                        <Image Source="twitter_icon.png" HeightRequest="40" WidthRequest="40"/>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+        
+        
+    </ContentPage.Content>
+</ContentPage>

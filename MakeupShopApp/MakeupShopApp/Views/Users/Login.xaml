@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MakeupShopApp.Views.Users.Login">
+    <ContentPage.Content>
+
+        <StackLayout Padding="20" VerticalOptions="Center">
+
+            <!-- Title -->
+            <Label Text="Welcome to MakeupShop" FontSize="30" HorizontalOptions="Center" TextColor="#333" />
+
+            <!-- Username/Email Entry -->
+            <Label Text="Username or Email" FontSize="16" />
+            <Entry x:Name="UsernameEntry" Placeholder="Enter username or email" Keyboard="Email" />
+
+            <!-- Password Entry -->
+            <Label Text="Password" FontSize="16" />
+            <Entry x:Name="PasswordEntry" Placeholder="Enter your password" IsPassword="True" />
+
+            <!-- Login Button -->
+            <Button Text="Login"
+                BackgroundColor="#007bff"
+                TextColor="White"
+                CornerRadius="8"
+                Clicked="OnLoginClicked"
+                HeightRequest="50" />
+
+            <!-- Signup Navigation -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="Don't have an account? " />
+                <Label Text="Sign Up" TextColor="#007bff" GestureRecognizers="{TapGestureRecognizer Tapped='OnSignUpTapped'}" />
+            </StackLayout>
+
+        </StackLayout>
+        
+        
+    </ContentPage.Content>
+</ContentPage>

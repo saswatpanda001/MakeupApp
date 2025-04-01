@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MakeupShopApp.Views.AboutPage"
+             xmlns:vm="clr-namespace:MakeupShopApp.ViewModels"
+             Title="{Binding Title}">
+
+    <Grid>
+        <!-- Background Gradient -->
+        <Grid.Background>
+            <LinearGradientBrush>
+                <GradientStop Color="#FFD1DC" Offset="0.1" />
+                <GradientStop Color="#FFE4E1" Offset="1.0" />
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <!-- Grid Layout -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Logo -->
+        <Image Source="makeuplogo.png"
+               HeightRequest="150"
+               WidthRequest="150"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Grid.Row="0"/>
+
+        <!-- Tagline -->
+        <Label Text="Discover Your Beauty!"
+               FontSize="32"
+               FontAttributes="Bold"
+               TextColor="#D81B60"
+               HorizontalOptions="Center"
+               Grid.Row="1"
+               Margin="10"/>
+
+        <!-- Description -->
+        <Label Text="Explore premium makeup products at your fingertips."
+               FontSize="16"
+               TextColor="#555"
+               HorizontalOptions="Center"
+               Grid.Row="2"
+               Margin="0,10,0,20"/>
+
+        <!-- Login and Signup Buttons -->
+        <StackLayout Grid.Row="3"
+                     VerticalOptions="Center"
+                     Spacing="20"
+                     HorizontalOptions="Center">
+
+            <!-- Login Button -->
+            <Button Text="User"
+                    BackgroundColor="#D81B60"
+                    TextColor="White"
+                    CornerRadius="30"
+                    WidthRequest="250"
+                    HeightRequest="50"
+                    FontSize="18"
+                    Clicked="OnLoginClicked"/>
+
+            <Button Text="AboutUs"
+                    BackgroundColor="#D81B60"
+                    TextColor="White"
+                    CornerRadius="30"
+                    WidthRequest="250"
+                    HeightRequest="50"
+                    FontSize="18"
+                    Clicked="OnAboutClicked"/>
+
+            <Button Text="ContactUs"
+                    BackgroundColor="#D81B60"
+                    TextColor="White"
+                    CornerRadius="30"
+                    WidthRequest="250"
+                    HeightRequest="50"
+                    FontSize="18"
+                    Clicked="OnContactClicked"/>
+
+        </StackLayout>
+    </Grid>
+</ContentPage>

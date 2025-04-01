@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MakeupShopApp.Views.Users.LoginPage">
+
+    <ContentPage.Content>
+        <StackLayout Padding="20" VerticalOptions="Center" Spacing="20">
+
+            <!-- Welcome Text with Gradient Effect -->
+            <Frame BackgroundColor="#D63384" CornerRadius="20" Padding="20" HasShadow="True">
+                <Label Text="💄 Welcome to MakeupShop" FontSize="30" FontAttributes="Bold" 
+                       HorizontalOptions="Center" TextColor="White" />
+            </Frame>
+
+            <!-- Username/Email Entry -->
+            <Label Text="Username" FontSize="16" TextColor="#555" />
+            <Frame BackgroundColor="White" CornerRadius="10" Padding="5" HasShadow="True">
+                <Entry x:Name="UsernameEntry" Placeholder="Enter username or email" Keyboard="Email" TextColor="#333" />
+            </Frame>
+
+            <!-- Password Entry -->
+            <Label Text="Password" FontSize="16" TextColor="#555" />
+            <Frame BackgroundColor="White" CornerRadius="10" Padding="5" HasShadow="True">
+                <Entry x:Name="PasswordEntry" Placeholder="Enter your password" IsPassword="True" TextColor="#333" />
+            </Frame>
+
+            <!-- Login Button -->
+            <Button Text="🚀 Login"
+                    BackgroundColor="#007bff"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="25"
+                    Clicked="OnLoginClicked"
+                    HeightRequest="50" />
+
+            <!-- Signup Navigation with Tap Gesture -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="Don't have an account? " TextColor="#333" />
+                <Label Text="Sign Up" TextColor="#007bff" FontAttributes="Bold">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnSignUpTapped" />
+                    </Label.GestureRecognizers>
+                </Label>
+            </StackLayout>
+
+            <!-- Forgot Password Navigation -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="Forgot your password? " TextColor="#333" />
+                <Label Text="Reset Password" TextColor="#007bff" FontAttributes="Bold">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnForgotPasswordTapped" />
+                    </Label.GestureRecognizers>
+                </Label>
+            </StackLayout>
+
+            <!-- Decorative Illustration -->
+            <Image Source="login_illustration.png" HeightRequest="200" Aspect="AspectFit" HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+
+    
+</ContentPage>

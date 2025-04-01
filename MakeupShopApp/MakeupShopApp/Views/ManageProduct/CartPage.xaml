@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MakeupShopApp.Views.ManageProduct.CartPage">
+
+
+    <ContentPage.Content>
+        <StackLayout Padding="20" Spacing="20">
+
+            <Button Text="🏠 Home"
+                    BackgroundColor="Transparent"
+                    TextColor="#007AFF"
+                    FontSize="16"
+                    HorizontalOptions="Start"
+                    Clicked="OnHomeClicked"/>
+            
+            
+
+            <!-- Header Section -->
+            <Frame BackgroundColor="#D63384" CornerRadius="20" Padding="20" HasShadow="True">
+                <Label Text="🛒 Your Cart" FontSize="32" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center" />
+            </Frame>
+
+            <!-- Cart List -->
+            <ListView x:Name="CartListView"
+                  SeparatorVisibility="None"
+                  BackgroundColor="Transparent"
+                  Margin="0,10,0,0"
+                  HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame BackgroundColor="White" CornerRadius="20" Padding="10" Margin="0,10" HasShadow="True">
+                                <StackLayout Orientation="Horizontal" Spacing="20" HeightRequest="150">
+
+                                  
+                                    <Frame BackgroundColor="#E0E0E0" CornerRadius="15" WidthRequest="100" HeightRequest="100">
+                                        <Label Text="🛍️" FontSize="50" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                    </Frame>
+
+                                    <!-- Product Details -->
+                                    <StackLayout VerticalOptions="Center" WidthRequest="180">
+                                        <Label Text="{Binding Product.ProductName}" FontSize="22" FontAttributes="Bold" TextColor="#333" />
+                                        <Label Text="{Binding Quantity, StringFormat='Quantity: {0}'}" FontSize="18" TextColor="#555" />
+                                        <Label Text="{Binding Product.Price, StringFormat='₹{0:F2}'}" FontSize="20" TextColor="#007bff" />
+                                    </StackLayout>
+
+                                    <!-- Delete Button -->
+                                    <Button Text="🗑️" BackgroundColor="#FF4C4C" 
+                                        TextColor="White" CornerRadius="20" WidthRequest="60"
+                                        HeightRequest="20"
+                                        Clicked="OnDeleteClicked"
+                                        CommandParameter="{Binding CartId}" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <!-- Total Section -->
+            <Frame BackgroundColor="#28A745" CornerRadius="20" Padding="15" HasShadow="True">
+                <Label x:Name="TotalLabel" FontSize="20" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center" />
+            </Frame>
+
+            <!-- Action Buttons -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
+
+                <!-- Pay and Order Button -->
+                <Button Text="💳 Pay and Order" Clicked="OnOrderClicked" 
+                    BackgroundColor="#007bff" TextColor="White" CornerRadius="25" 
+                    WidthRequest="180" HeightRequest="55" />
+
+                <!-- Back to Products Button -->
+                <Button Text="⬅️ Back to Products" Clicked="OnBackClicked"
+                    BackgroundColor="#D63384" TextColor="White" CornerRadius="25"
+                    WidthRequest="180" HeightRequest="55" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+
+
+
+</ContentPage>

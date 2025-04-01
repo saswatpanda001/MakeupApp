@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MakeupShopApp.Views.Users.UserUpdatePage">
+    <ContentPage.Content>
+
+        <StackLayout Padding="20" BackgroundColor="#f5f5f5">
+            <Label Text="Update Profile"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="#007acc"
+                   Margin="0,20,0,10"/>
+
+            <!-- Username (Read-only) -->
+            <Label Text="Username:" FontSize="16" />
+            <Entry Text="{Binding User.Username}" IsReadOnly="True" BackgroundColor="#e0e0e0"/>
+
+            <!-- Email -->
+            <Label Text="Email:" FontSize="16" />
+            <Entry Text="{Binding User.Email}" Placeholder="Enter your email" Keyboard="Email" />
+            
+            <!-- Phone -->
+            <Label Text="Phone:" FontSize="16" />
+            <Entry Text="{Binding User.Phone}" Placeholder="Enter your phone number" Keyboard="Telephone" />
+
+            <!-- Address -->
+            <Label Text="Address:" FontSize="16" />
+            <Editor Text="{Binding User.Address}" Placeholder="Enter your address" HeightRequest="100"/>
+
+            <!-- Update Button -->
+            <Button Text="Update Profile"
+                    BackgroundColor="#007acc"
+                    TextColor="White"
+                    Margin="0,20,0,10"
+                    Clicked="OnUpdateClicked"/>
+        </StackLayout>
+        
+        
+    </ContentPage.Content>
+</ContentPage>

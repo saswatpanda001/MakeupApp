@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MakeupShopApp.Views.ManageProduct.ProductDetailPage">
+    <ContentPage.Content>
+
+
+        <ScrollView>
+            <StackLayout Padding="20">
+                <Button Text="🏠 Home"
+                    BackgroundColor="Transparent"
+                    TextColor="#007AFF"
+                    FontSize="16"
+                    HorizontalOptions="Start"
+                    Clicked="OnHomeClicked"/>
+                
+               
+                <!-- Product Image -->
+                <Image Source="{Binding ImageUrl}" HeightRequest="300" Aspect="AspectFill"/>
+
+                <!-- Product Info -->
+                <Label Text="{Binding ProductName}" FontSize="28" FontAttributes="Bold" TextColor="#D63384" />
+                <Label Text="{Binding Description}" FontSize="16" TextColor="#333" />
+                <Label Text="{Binding Price, StringFormat='Price: ${0:F2}'}" FontSize="18" TextColor="#007bff" />
+             
+
+                <Label Text="{Binding Stock, StringFormat='In Stock: {0}'}" FontSize="16" />
+
+                <!-- Quantity Selector -->
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center" Margin="10,0">
+                    <Label Text="Quantity: " FontSize="16"/>
+                    <Entry x:Name="QuantityEntry" Text="1" WidthRequest="60" Keyboard="Numeric"/>
+                </StackLayout>
+
+                <!-- Add to Cart and Back Button -->
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10">
+                    <Button Text="Add to Cart" Clicked="OnAddToCartClicked" BackgroundColor="#28A745" TextColor="White" CornerRadius="25"/>
+                    <Button Text="Back to Products" Clicked="OnBackClicked" BackgroundColor="#D63384" TextColor="White" CornerRadius="25"/>
+                    <Button Text="Go To Cart" Clicked="OnCartClicked" BackgroundColor="#D63384" TextColor="White" CornerRadius="25"/>
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+        
+
+
+    </ContentPage.Content>
+</ContentPage>

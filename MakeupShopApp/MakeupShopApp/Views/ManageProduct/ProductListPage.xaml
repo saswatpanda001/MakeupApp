@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MakeupShopApp.Views.ManageProduct.ProductListPage">
+    <ContentPage.Content>
+
+
+        <StackLayout>
+            <Button Text="🏠 Home"
+                    BackgroundColor="Transparent"
+                    TextColor="#007AFF"
+                    FontSize="16"
+                    HorizontalOptions="Start"
+                    Clicked="OnHomeClicked"/>
+            
+            <!-- Page Header -->
+            <Label Text="Discover Our Products"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               TextColor="#D63384"
+               Margin="10"/>
+
+            <!-- Product Grid -->
+            <CollectionView x:Name="ProductsCollectionView"
+                         SelectionMode="Single"
+                         ItemsSource="{Binding Products}"
+                         SelectedItem="{Binding SelectedProduct, Mode=TwoWay}"
+                         SelectionChanged="OnProductSelected">
+
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" Span="2"/>
+                </CollectionView.ItemsLayout>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame CornerRadius="15" Padding="10" Margin="5" BackgroundColor="#FFF0F5">
+                            <StackLayout>
+                                <Image Source="{Binding ImageUrl}" HeightRequest="150" Aspect="AspectFill"/>
+                                <Label Text="{Binding ProductName}" FontSize="18" FontAttributes="Bold"/>
+                                <Label Text="{Binding Price, StringFormat='${0:F2}'}" FontSize="16" TextColor="#007bff"/>
+
+                            </StackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+        
+        
+    </ContentPage.Content>
+</ContentPage>
