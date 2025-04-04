@@ -21,6 +21,17 @@
                TextColor="#D63384"
                Margin="10"/>
 
+
+            <SearchBar Placeholder="Search products..."
+           x:Name="ProductSearchBar"
+           TextChanged="OnSearchTextChanged"
+           CancelButtonColor="#007AFF"
+           BackgroundColor="White"
+           Margin="10"/>
+
+
+
+            
             <!-- Product Grid -->
             <CollectionView x:Name="ProductsCollectionView"
                          SelectionMode="Single"

@@ -131,6 +131,9 @@ namespace MakeupShopApp.Views.ManageProduct
                     await DisplayAlert("Error", "Failed to create order detail for a product.", "OK");
                     return;
                 }
+                product.Stock -= cartItem.Quantity;
+                bool productQuantityUpdated = await _productService.UpdateProductAsync(product);
+                Console.WriteLine(productQuantityUpdated);
                 Console.WriteLine("success5");
             }
 
