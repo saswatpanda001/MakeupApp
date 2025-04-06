@@ -1,3 +1,12 @@
+C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\bin\Debug\MakeupShopApp.Android.dll
+C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\bin\Debug\MakeupShopApp.Android.pdb
+C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\bin\Debug\com.companyname.makeupshopapp.apk
+C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\bin\Debug\com.companyname.makeupshopapp.aab
+C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\bin\Debug\com.companyname.makeupshopapp-Signed.aab
+C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\bin\Debug\com.companyname.makeupshopapp-Signed.apk
+C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\bin\Debug\com.companyname.makeupshopapp-Signed.apk.idsig
+C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\bin\Debug\MakeupShopApp.dll
+C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\bin\Debug\MakeupShopApp.pdb
 C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\obj\Debug\110\MonoAndroid,Version=v11.0.AssemblyAttributes.cs
 C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\obj\Debug\110\build.props
 C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\obj\Debug\110\adb.props
@@ -24,15 +33,6 @@ C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\ob
 C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\obj\Debug\110\R.txt
 C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\obj\Debug\110\R.cs.flag
 C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\obj\Debug\110\MakeupShopApp.Android.csproj.CoreCompileInputs.cache
-C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\bin\Debug\MakeupShopApp.Android.dll
-C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\bin\Debug\MakeupShopApp.Android.pdb
-C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\bin\Debug\com.companyname.makeupshopapp.apk
-C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\bin\Debug\com.companyname.makeupshopapp.aab
-C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\bin\Debug\com.companyname.makeupshopapp-Signed.aab
-C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\bin\Debug\com.companyname.makeupshopapp-Signed.apk
-C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\bin\Debug\com.companyname.makeupshopapp-Signed.apk.idsig
-C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\bin\Debug\MakeupShopApp.dll
-C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\bin\Debug\MakeupShopApp.pdb
 C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\obj\Debug\110\MakeupShopApp.Android.csproj.CopyComplete
 C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\obj\Debug\110\MakeupShopApp.Android.dll
 C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\obj\Debug\110\MakeupShopApp.Android.pdb
@@ -601,3 +601,6 @@ C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\ob
 C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\obj\Debug\110\stamp\_GenerateJavaStubs.stamp
 C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\obj\Debug\110\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\obj\Debug\110\res\drawable\facebook_icon.png
+C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\obj\Debug\110\res\drawable\twitter_icon.png
+C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp.Android\obj\Debug\110\res\drawable\instagram_icon.png

@@ -32,40 +32,55 @@
                            Margin="0,5"
                            BackgroundColor="#f0f0f0"
                            BorderColor="#d3d3d3">
-                                <StackLayout Orientation="Vertical" Spacing="10">
-                                    <Label Text="{Binding OrderId}" FontAttributes="Bold" FontSize="16" TextColor="#333" />
+
+                                <Frame BorderColor="#CCCCCC" CornerRadius="15" Padding="15" Margin="15" BackgroundColor="#FDF6FF">
+                                    <StackLayout Orientation="Vertical" Spacing="12">
+
+                                        <!-- Header with a text-based logo -->
+                                        <Label Text="🛍️ DollUp Order Summary" 
+               FontSize="20" 
+               FontAttributes="Bold" 
+               TextColor="#8E44AD" 
+               HorizontalOptions="Center" />
+
+                                        <Label Text="🆔 Order ID: {Binding OrderId}" 
+               FontSize="16" 
+               TextColor="#2C3E50" />
+
+                                        <Label Text="📅 Date: {Binding OrderDate, StringFormat='{0:dd/MM/yyyy}'}" 
+               FontSize="14" 
+               TextColor="#555" />
+
+                                        <Label Text="💰 Total: ₹{Binding TotalAmount, StringFormat='{0:F2}'}" 
+               FontSize="14" 
+               TextColor="Green" />
+
+                                        <Label Text="📦 Status: {Binding Status}" 
+               FontSize="14" 
+               TextColor="#007ACC" />
+
+                                        <Label Text="👤 Name: {Binding Name}" 
+               FontSize="14" 
+               TextColor="#333" />
+
+                                        <Label Text="🏠 Address: {Binding Address}" 
+               FontSize="14" 
+               TextColor="#555" />
+
+                                        <Label Text="📞 Contact: {Binding Number}" 
+               FontSize="14" 
+               TextColor="#990000" />
+
+                                        <Label Text="💳 Payment: {Binding PaymentMethod}" 
+               FontSize="14" 
+               TextColor="#228B22" />
+
+                                    </StackLayout>
+                                </Frame>
 
 
-                                    <Label Text="{Binding OrderDate, StringFormat='Date: {0:dd/MM/yyyy}'}"
-       FontSize="14"
-       TextColor="#666" />
-
-                                    <Label Text="{Binding TotalAmount, StringFormat='Total: ₹{0:F2}'}"
-       FontSize="14"
-       TextColor="Green" />
-
-                                    <Label Text="{Binding Status, StringFormat='Status: {0}'}"
-       FontSize="14"
-       TextColor="#007acc" />
-
-                                    <Label Text="{Binding Name, StringFormat='Name: {0}'}"
-       FontSize="14"
-       TextColor="#333" />
-
-                                    <Label Text="{Binding Address, StringFormat='Address: {0}'}"
-       FontSize="14"
-       TextColor="#555" />
-
-                                    <Label Text="{Binding Number, StringFormat='Contact: {0}'}"
-       FontSize="14"
-       TextColor="#990000" />
-
-                                    <Label Text="{Binding PaymentMethod, StringFormat='Payment Method: {0}'}"
-       FontSize="14"
-       TextColor="#228B22" />
-
-
-                                </StackLayout>
+                            
+                            
                             </Frame>
                         </ViewCell>
                     </DataTemplate>

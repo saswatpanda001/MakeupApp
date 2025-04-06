@@ -36,20 +36,29 @@
                            HasShadow="True">
 
                                 <StackLayout Orientation="Vertical" Spacing="10">
+                                    <Frame BorderColor="#CCCCCC" CornerRadius="15" Padding="15" Margin="10" BackgroundColor="#F0F8FF">
+                                        <StackLayout Orientation="Vertical" Spacing="10">
 
-                                    <Label Text="{Binding Product.ProductName}"
-                                   FontSize="18"
-                                   FontAttributes="Bold"
-                                   TextColor="#007acc" />
+                                            <!-- Product Name -->
+                                            <Label Text="🧸 {Binding Product.ProductName}"
+               FontSize="18"
+               FontAttributes="Bold"
+               TextColor="#007acc" />
 
-                                    <Label Text="{Binding Quantity, StringFormat='Quantity: {0}'}"
-                                   FontSize="16"
-                                   TextColor="#666" />
+                                            <!-- Quantity -->
+                                            <Label Text="🔢 Quantity: {Binding Quantity}"
+               FontSize="16"
+               TextColor="#666" />
 
-                                    <Label Text="{Binding Price, StringFormat='Price: ₹{0:F2}'}"
-                                   FontSize="16"
-                                   TextColor="#28a745" />
+                                            <!-- Price -->
+                                            <Label Text="💵 Price: ₹{Binding Price, StringFormat='{0:F2}'}"
+               FontSize="16"
+               TextColor="#28a745" />
+
+                                        </StackLayout>
+                                    </Frame>
                                 </StackLayout>
+
                             </Frame>
                         </ViewCell>
                     </DataTemplate>

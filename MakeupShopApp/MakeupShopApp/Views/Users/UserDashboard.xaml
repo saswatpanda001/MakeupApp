@@ -22,8 +22,8 @@
                     </StackLayout>
                 </Frame>
 
-                <!-- Product Categories -->
-                <Label Text="Shop by Category" FontSize="22" FontAttributes="Bold" TextColor="#333" />
+  
+                <Label Text="Most Viewed Products" FontSize="22" FontAttributes="Bold" TextColor="#333" />
                 <Grid ColumnSpacing="10" RowSpacing="10">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="150" />
@@ -89,13 +89,7 @@
                     </Frame>
                 </Grid>
 
-                <!-- Current Offers -->
-                <Label Text="Exciting Offers" FontSize="22" FontAttributes="Bold" TextColor="#333" />
-                <Frame CornerRadius="10" BackgroundColor="#FFDEAD" Padding="15">
-                    <Label Text="🎁 Get 20% off on your first order! Use code: BEAUTY20"
-                       FontSize="16"
-                       TextColor="#8B4513" />
-                </Frame>
+             
 
                 <!-- Manage Orders and Cart -->
                 <StackLayout Orientation="Horizontal" Spacing="20">
@@ -116,12 +110,30 @@
                     </Frame>
                 </StackLayout>
 
-                <!-- Profile and Logout -->
-                <StackLayout Orientation="Horizontal" Spacing="20">
-                    <Button Text="👤 Edit Profile" BackgroundColor="#FFA07A" TextColor="White" Clicked="OnProfileClicked"/>
-                    <Button Text="🚪 Logout" BackgroundColor="#FF6347" TextColor="White" Clicked="OnLogoutClicked"/>
-                </StackLayout>
 
+                <!-- Manage Orders and Cart -->
+                <StackLayout Orientation="Horizontal" Spacing="20">
+                    <!-- Orders -->
+                    <Frame CornerRadius="10" BackgroundColor="#98FB98" Padding="20" WidthRequest="160">
+                        <StackLayout HorizontalOptions="Center">
+                            <Label Text="Edit Profile" FontSize="18" TextColor="#006400" />
+                            <Button Text="👤 Edit Profile" BackgroundColor="#FFA07A" TextColor="White" Clicked="OnProfileClicked"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <!-- Cart -->
+                    <Frame CornerRadius="10" BackgroundColor="#ADD8E6" Padding="20" WidthRequest="160">
+                        <StackLayout HorizontalOptions="Center">
+                            <Label Text="Logout" FontSize="18" TextColor="#1E90FF" />
+                            <Button Text="🚪 Logout" BackgroundColor="#FF6347" TextColor="White" Clicked="OnLogoutClicked"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                
+                
+                
+
+                
             </StackLayout>
         </ScrollView>
         

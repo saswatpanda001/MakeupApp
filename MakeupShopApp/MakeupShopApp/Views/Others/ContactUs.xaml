@@ -52,41 +52,50 @@
                        TextColor="#6D214F"/>
             </StackLayout>
             </Frame>
-            
 
-                <!-- Form Section -->
-                <Frame CornerRadius="15" BackgroundColor="#FFF0F5" Padding="20">
-                <StackLayout>
-                    <Label Text="📝 Send Us a Message"
-                       FontSize="22"
-                       FontAttributes="Bold"
-                       TextColor="#B03A2E"/>
 
-                    <Entry Placeholder="Your Name" FontSize="16" BackgroundColor="#FFFFFF" />
-                    <Entry Placeholder="Your Email" FontSize="16" BackgroundColor="#FFFFFF" Keyboard="Email" />
-                    <Editor Placeholder="Write your message here..." HeightRequest="120" BackgroundColor="#FFFFFF" />
 
-                    <Button Text="Send Message"
-                        BackgroundColor="#D63384"
-                        TextColor="White"
-                        CornerRadius="25"
-                        Margin="0,20,0,0"
-                        HeightRequest="50"/>
-                </StackLayout>
-            </Frame>
 
                 <!-- Social Media Section -->
-                <StackLayout Spacing="20" HorizontalOptions="Center">
-                    <Label Text="Follow Us On Social Media"
-                       FontSize="18"
-                       FontAttributes="Bold"
-                       TextColor="#8E44AD"/>
-                    <StackLayout Orientation="Horizontal" Spacing="20">
-                        <Image Source="instagram_icon.png" HeightRequest="40" WidthRequest="40"/>
-                        <Image Source="facebook_icon.png" HeightRequest="40" WidthRequest="40"/>
-                        <Image Source="twitter_icon.png" HeightRequest="40" WidthRequest="40"/>
+                <Frame BackgroundColor="#F8EAFD" CornerRadius="15" Padding="20" Margin="20">
+                    <StackLayout Spacing="20" HorizontalOptions="Center">
+                        <Label Text="Follow Dollup on Social Media"
+               FontSize="20"
+               FontAttributes="Bold"
+               TextColor="#9B59B6"
+               HorizontalOptions="Center" />
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="30">
+                            <StackLayout Spacing="5" HorizontalOptions="Center">
+                                <Image Source="instagram_icon.png"
+                       HeightRequest="50"
+                       WidthRequest="50"
+                       BackgroundColor="#E1306C"
+                      />
+                                <Label Text="@dollup_beauty" FontSize="14" TextColor="#8E44AD" HorizontalOptions="Center"/>
+                            </StackLayout>
+
+                            <StackLayout Spacing="5" HorizontalOptions="Center">
+                                <Image Source="facebook_icon.png"
+                       HeightRequest="50"
+                       WidthRequest="50"
+                       BackgroundColor="#3B5998"
+                        />
+                                <Label Text="/dollupofficial" FontSize="14" TextColor="#8E44AD" HorizontalOptions="Center"/>
+                            </StackLayout>
+
+                            <StackLayout Spacing="5" HorizontalOptions="Center">
+                                <Image Source="twitter_icon.png"
+                       HeightRequest="50"
+                       WidthRequest="50"
+                       BackgroundColor="#1DA1F2"
+                        />
+                                <Label Text="@dollupbuzz" FontSize="14" TextColor="#8E44AD" HorizontalOptions="Center"/>
+                            </StackLayout>
+                        </StackLayout>
                     </StackLayout>
-                </StackLayout>
+                </Frame>
+
             </StackLayout>
         </ScrollView>
         
