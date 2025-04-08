@@ -30,3 +30,4 @@ C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp\obj\Debug\
 C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp\obj\Debug\netstandard2.0\MakeupShopApp.dll
 C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp\obj\Debug\netstandard2.0\ref\MakeupShopApp.dll
 C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp\obj\Debug\netstandard2.0\MakeupShopApp.pdb
+C:\Users\saswa\source\repos\MakeupShopApp\MakeupShopApp\MakeupShopApp\obj\Debug\netstandard2.0\MakeupShopApp.csproj.AssemblyReference.cache
